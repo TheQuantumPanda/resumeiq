@@ -1,0 +1,36 @@
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+/node_modules/
+
+# Generated output
+/.react-router/
+/build/
+/coverage/
+*.tsbuildinfo
+*.log
+*.tmp
+*.bak
+
+# Internal notes and local agent guidance
+/docs/
+/.agents/
+/AGENTS.md
+
+# Verification output and browser state
+/output/
+/.playwright-cli/
+/playwright-report/
+/test-results/
+/.auth/
+*.har
+
+# Keep personal documents out of the source repository
+*.pdf
+*.doc
+*.docx
+*.odt
