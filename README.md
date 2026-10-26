@@ -104,7 +104,7 @@ The original PDF and preview remain in Puter storage. **The AI request receives 
 
 ## Getting Started
 
-Use **Node.js 24+** and npm. Internet access, Puter sign-in and sufficient account allowance are required for cloud features. No `.env` or application API key is required. AI usage may incur charges for the signed-in user.
+Use **Node.js 24.x** and npm. Internet access, Puter sign-in and sufficient account allowance are required for cloud features. No `.env` or application API key is required. AI usage may incur charges for the signed-in user.
 
 ```bash
 git clone https://github.com/TheQuantumPanda/resumeiq.git
@@ -121,6 +121,21 @@ npm start
 ```
 
 The static output is `build/client`; `npm start` previews it locally, normally on port 4173. A static host needs HTTPS and an `index.html` fallback for application routes. `public/_redirects` supports compatible hosts; verify Puter permissions on the eventual origin.
+
+### Vercel static hosting
+
+Import `TheQuantumPanda/resumeiq` with the repository root as the Root Directory and these settings:
+
+| Setting | Value |
+| --- | --- |
+| Framework Preset | **Other** (`framework: null`) |
+| Node.js Version | **24.x** |
+| Install Command | `npm ci` |
+| Build Command | `npm run build` |
+| Output Directory | `build/client` |
+| Environment Variables | None required |
+
+[vercel.json](vercel.json) fixes the static build settings and supplies one SPA fallback for direct links and refreshes. Existing files take precedence over the rewrite. `ssr: false` remains unchanged; only `build/client` is published, with no Vercel Functions or custom server. Puter loads over HTTPS and the bundled PDF.js worker is served from `/assets/`. After deployment, verify sign-in permissions, saved-review reloads and PDF preparation on the final origin; local checks do not establish those hosted behaviors.
 
 ## Testing and Verification
 
