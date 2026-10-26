@@ -7,6 +7,7 @@
 </p>
 
 <p align="center">
+  <a href="https://resumeiq-ashen.vercel.app/"><strong>🌐 Live Demo</strong></a> ·
   <a href="#application-preview">Preview</a> ·
   <a href="#system-architecture">Architecture</a> ·
   <a href="#getting-started">Getting started</a> ·
@@ -120,11 +121,11 @@ npm run build
 npm start
 ```
 
-The static output is `build/client`; `npm start` previews it locally, normally on port 4173. A static host needs HTTPS and an `index.html` fallback for application routes. `public/_redirects` supports compatible hosts; verify Puter permissions on the eventual origin.
+The static output is `build/client`; `npm start` previews it locally, normally on port 4173. Other static hosts need HTTPS and an `index.html` fallback for application routes. `public/_redirects` supports compatible hosts; Puter permissions should be checked for each hosting origin.
 
 ### Vercel static hosting
 
-Import `TheQuantumPanda/resumeiq` with the repository root as the Root Directory and these settings:
+The [production demo](https://resumeiq-ashen.vercel.app/) is deployed on Vercel. For redeployments, use the repository root as the Root Directory and these settings:
 
 | Setting | Value |
 | --- | --- |
@@ -135,7 +136,7 @@ Import `TheQuantumPanda/resumeiq` with the repository root as the Root Directory
 | Output Directory | `build/client` |
 | Environment Variables | None required |
 
-[vercel.json](vercel.json) fixes the static build settings and supplies one SPA fallback for direct links and refreshes. Existing files take precedence over the rewrite. `ssr: false` remains unchanged; only `build/client` is published, with no Vercel Functions or custom server. Puter loads over HTTPS and the bundled PDF.js worker is served from `/assets/`. After deployment, verify sign-in permissions, saved-review reloads and PDF preparation on the final origin; local checks do not establish those hosted behaviors.
+[vercel.json](vercel.json) fixes the static build settings and supplies one SPA fallback for direct links and refreshes. Existing files take precedence over the rewrite. `ssr: false` remains unchanged; only `build/client` is published, with no Vercel Functions or custom server. Puter loads over HTTPS and the bundled PDF.js worker is served from `/assets/`. Sign-in permissions, saved-review reloads and PDF preparation are separate production-origin checks; a reachable deployment alone does not verify those workflows.
 
 ## Testing and Verification
 
@@ -146,7 +147,7 @@ Import `TheQuantumPanda/resumeiq` with the repository root as the Root Directory
 | `npm run lint` | Runs ESLint across application and configuration code. |
 | `npm run build` | Produces the static SPA. |
 
-Tests use mocked PDF/provider boundaries and make no authenticated inference calls. **Real authenticated, resume-specific Puter AI analysis is user-verified**, separately from automated checks. That does not establish account isolation, provider availability or behavior on a future hosted origin. The preview media above uses simulated Puter replies.
+Tests use mocked PDF/provider boundaries and make no authenticated inference calls. **Real authenticated, resume-specific Puter AI analysis is user-verified**, separately from automated checks. That does not establish account isolation, provider availability or automated end-to-end coverage of the production deployment. The preview media above uses simulated Puter replies.
 
 ## Known Limitations
 
