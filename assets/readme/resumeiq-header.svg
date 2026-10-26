@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">ResumeIQ — Your next role, in perspective.</title>
+  <desc id="desc">An ivory editorial banner with serif ResumeIQ branding and a restrained document-to-role matching motif in forest green and terracotta.</desc>
+  <rect width="1280" height="360" rx="8" fill="#F7F3EA"/>
+  <path d="M64 44H1216M64 316H1216" stroke="#E6DDD0"/>
+  <text x="64" y="86" fill="#B96E50" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="2.5">A CONSIDERED NEXT STEP</text>
+  <text x="60" y="184" fill="#24211F" font-family="Georgia,'Times New Roman',serif" font-size="88" letter-spacing="-4">ResumeIQ</text>
+  <text x="64" y="231" fill="#344A3F" font-family="Georgia,'Times New Roman',serif" font-size="30">Your next role, in perspective.</text>
+  <text x="64" y="281" fill="#24211F" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="1.2">EXPLAINABLE MATCHING</text>
+  <circle cx="263" cy="277" r="2" fill="#B96E50"/>
+  <text x="280" y="281" fill="#24211F" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="1.2">THOUGHTFUL WRITING FEEDBACK</text>
+  <g fill="#FCFAF5" stroke="#E6DDD0">
+    <rect x="864" y="77" width="184" height="220" rx="3"/>
+    <rect x="842" y="64" width="184" height="220" rx="3"/>
+  </g>
+  <path d="M866 100H954" stroke="#344A3F" stroke-width="5"/>
+  <g stroke="#E6DDD0" stroke-width="4">
+    <path d="M866 120H998M866 135H983M866 164H998M866 179H974M866 208H998M866 223H986M866 252H942"/>
+  </g>
+  <path d="M1038 174H1075m-7-7 7 7-7 7" fill="none" stroke="#B96E50" stroke-width="2"/>
+  <g fill="none" stroke="#344A3F" stroke-width="1.6">
+    <rect x="1094" y="103" width="108" height="142" rx="3"/>
+    <circle cx="1115" cy="137" r="8"/><path d="m1111 137 3 3 5-6M1134 137H1183"/>
+    <circle cx="1115" cy="174" r="8"/><path d="m1111 174 3 3 5-6M1134 174H1183"/>
+  </g>
+  <circle cx="1115" cy="211" r="8" fill="none" stroke="#B96E50" stroke-width="1.6"/>
+  <path d="M1111 211H1119M1134 211H1183" stroke="#B96E50" stroke-width="1.6"/>
+  <text x="852" y="305" fill="#344A3F" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.8">YOUR EXPERIENCE</text>
+  <text x="1097" y="268" fill="#344A3F" font-family="Arial,Helvetica,sans-serif" font-size="10" letter-spacing="1.8">THE ROLE</text>
+</svg>
